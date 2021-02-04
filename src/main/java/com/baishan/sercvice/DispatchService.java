@@ -1,13 +1,9 @@
 package com.baishan.sercvice;
 
 import com.alibaba.fastjson.JSONObject;
-import com.baishan.model.NowResult;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.Objects;
 
 /**
- * .
+ * Dispatch Service.
  *
  * @author <a href="https://japoul.cn">Japoul</a>
  * @date 2021/2/4 15:00
@@ -15,9 +11,9 @@ import java.util.Objects;
 public interface DispatchService {
 
   /**
-   * 调度方法
+   * Dispatch method
    *
-   * @return 转发的请求结果
+   * @return Forwarded request result
    */
   JSONObject dispatch();
 }

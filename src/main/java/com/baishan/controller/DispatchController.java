@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 调度控制器.
+ * Dispatch controller.
  *
  * @author <a href="https://japoul.cn">Japoul</a>
  * @date 2021/2/4 15:03
@@ -24,6 +24,11 @@ public class DispatchController {
 
   private final @NonNull DispatchService dispatchService;
 
+  /**
+   * Dispatch entry.
+   *
+   * @return Forwarded request result
+   */
   @GetMapping("/now")
   public HttpEntity<?> dispatch() {
     return ResponseEntity.ok(dispatchService.dispatch());
