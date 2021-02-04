@@ -10,4 +10,5 @@ public class BaishanApplication {
     SpringApplication.run(BaishanApplication.class, args);
   }
 
+
 }

@@ -1,7 +1,9 @@
 package com.baishan.sercvice;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baishan.model.NowResult;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Objects;
 
 /**
@@ -17,5 +19,5 @@ public interface DispatchService {
    *
    * @return 转发的请求结果
    */
-  NowResult dispatch();
+  JSONObject dispatch();
 }
